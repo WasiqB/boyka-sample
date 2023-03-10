@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "integer"
+    },
+    "EmployeeDetail": {
+      "type": "object",
+      "properties": {
+        "FirstName": {
+          "type": "string"
+        },
+        "LastName": {
+          "type": "string"
+        },
+        "Contact": {
+          "type": "object",
+          "properties": {
+            "EmailId": {
+              "type": "string"
+            },
+            "PhoneNumber": {
+              "type": "string"
+            },
+            "LanLineNumber": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "EmailId",
+            "PhoneNumber",
+            "LanLineNumber"
+          ]
+        },
+        "FullName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "FirstName",
+        "LastName",
+        "Contact",
+        "FullName"
+      ]
+    },
+    "EmiratedID": {
+      "type": "string"
+    },
+    "ProfilePic": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "ID",
+    "EmployeeDetail",
+    "EmiratedID",
+    "ProfilePic"
+  ]
+}

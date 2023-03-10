@@ -1,0 +1,49 @@
+{
+  "ui": {
+    "timeout": {
+      "implicit_wait": 10,
+      "explicit_wait": 30,
+      "page_load_timeout": 30,
+      "script_timeout": 10
+    },
+    "screenshot": {
+      "enabled": true,
+      "path": "./screenshots",
+      "extension": "jpeg",
+      "prefix": "SCR"
+    },
+    "web": {
+      "test_chrome": {
+        "browser": "CHROME",
+        "highlight": true,
+        "headless": false
+      }
+    }
+  },
+  "api": {
+    "test_booking": {
+      "base_uri": "https://restful-booker.herokuapp.com",
+      "base_path": "/booking",
+      "read_timeout": 2,
+      "write_timeout": 2,
+      "connection_timeout": 1,
+      "logging": {
+        "request": true,
+        "response": true
+      },
+      "schema_path": "schema/"
+    },
+    "test_address": {
+      "base_uri": "http://10.254.18.14",
+      "base_path": "/api",
+      "read_timeout": 2,
+      "write_timeout": 2,
+      "connection_timeout": 1,
+      "logging": {
+        "request": true,
+        "response": true
+      },
+      "schema_path": "schema/"
+    }
+  }
+}
